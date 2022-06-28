@@ -1,10 +1,12 @@
 # blog
 
-架設自己的部落格 
-使用工具
-bootstrap
-php 
-mariaDB
+架設自己的部落格
+  
+    使用工具
+        bootstrap  
+        php  
+        mariaDB  
+
 
 前端使用bootstrap 加 微量css 及 javascript設計
 
