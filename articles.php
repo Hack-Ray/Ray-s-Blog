@@ -11,7 +11,8 @@
 		<div class="col-10">
             <?php
                 include("dbconn.php");
-                $stmt = $conn->prepare("SELECT * FROM `articles` WHERE id = {$num};");                
+                $stmt = $conn->prepare("SELECT * FROM `articles` WHERE id = :num;");
+                $stmt->bindParam(":num", $num);                
                 $stmt->execute();            
                 // set the resulting array to associative
                 $result = $stmt->Fetch(PDO::FETCH_ASSOC);

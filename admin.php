@@ -1,12 +1,14 @@
 <?php
     session_start();
     include("header.php");
+    include("const.php");
     
     if ($_SESSION['user'] != 'ok') {
         echo "<script>window.location.href='http://localhost/blog/login.php';</script>";
     }
     ?>
 <div class="container">
+    
 	<div class="row justify-content-center">
 		<table class="table">
 			<thead>
@@ -42,23 +44,25 @@
                             <td>${row['title']}</td>
                             <td>${newDate}</td>
                             <td><a href='${articles_url}${row['id']}'><button type='button' class='btn btn-success'>修改</button></a></td>
-                            <td><a href='${articles_url}${row['id']}'><button type='button' class='btn btn-danger'>刪除</button></a></td>
+                            <td><a href='${delete_url}${row['id']}'><button type='button' class='btn btn-danger'>刪除</button></a></td>
                             </tr>
                             ";
                     }
                     ?>
 			</tbody>
 		</table>
+        <form method="get">
+            <button type="submit" class="btn btn-success" name="create">新增</button>
+            <button type="submit" class="btn btn-danger" name="logout">登出</button>
+        </form>
 	</div>
+    
 </div>
-
-<form method="get">
-    <button type="submit" class="btn btn-danger" name="logout">登出</button>
-</form>
-
 <?php
-    if(isset($_GET['logout'])){
+if (isset($_GET['logout'])) {
         session_unset();
         echo "<script>window.location.href='http://localhost/blog/';</script>";
-    }
-    include("footer.php");
+    } elseif (isset($_GET['create'])) {
+        echo "<script>window.location.href='http://localhost/blog/create.php';</script>";
+}
+include("footer.php");
