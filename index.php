@@ -29,8 +29,6 @@
 			        </div>
                      ";
                 }
-
-
             ?>
 		</div>
 		<div class="col">
@@ -40,5 +38,6 @@
 
 
 <?php
+    $conn = null;
     include("footer.php");
 ?>
