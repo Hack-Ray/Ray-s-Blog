@@ -7,7 +7,7 @@
 	<div class="row">
 		<div class="col">
 		</div>
-		<div class="col-7">
+		<div class="col-8">
 			<small class="text-muted">2022</small>
 			<hr />
             <?php

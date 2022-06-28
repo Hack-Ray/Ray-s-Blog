@@ -13,7 +13,7 @@
 <!-- partial:index.partial.html -->
 <nav id="nav" class="navbar navbar-light bg-light fixed-top" style="border-bottom: solid 1px rgba(0, 0, 0, 0.2);">
 	<div class="container-fluid">
-		<a class="navbar-brand" href="<?php echo $index_url;?>">RayWu</a>
+        <a class="navbar-brand " href="<?php echo $index_url;?>">RayWu</a>
 		<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
 			<span class="navbar-toggler-icon"></span>
 		</button>
