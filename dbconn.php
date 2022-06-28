@@ -1,7 +1,7 @@
 <?php
 $db = "mysql";
 $server_Name = "localhost";
-$db_Name = "test";
+$db_Name = "Ray_Blog";
 $user_Name = "root";
 $user_Pwd = "1234";
 

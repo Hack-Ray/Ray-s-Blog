@@ -18,12 +18,12 @@
                 $result = $stmt->Fetch(PDO::FETCH_ASSOC);
                 $timestamp = strtotime($result['created_at']); 
                 $newDate = date("Y-m-d", $timestamp);
-
+                $newbody = nl2br($result['body']);
                 echo "
                     <span class='display-6'>${result['title']}</span><small class='text-muted'>建立於 ${newDate}</small>
 		            <hr />
 		            <p>
-                    ${result['body']}
+                    ${newbody}
 		            </p>
                      ";
             ?>

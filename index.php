@@ -12,7 +12,7 @@
 			<hr />
             <?php
                 include("dbconn.php");
-                $stmt = $conn->prepare("SELECT * FROM `articles`;");                
+                $stmt = $conn->prepare("SELECT * FROM `articles` ORDER BY `created_at` DESC;");                
                 $stmt->execute();            
                 // set the resulting array to associative
                 $result = $stmt->FetchAll(PDO::FETCH_ASSOC);

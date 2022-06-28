@@ -43,7 +43,7 @@
                             <th scope='row'>${row['id']}</th>
                             <td>${row['title']}</td>
                             <td>${newDate}</td>
-                            <td><a href='${articles_url}${row['id']}'><button type='button' class='btn btn-success'>修改</button></a></td>
+                            <td><a href='${edit_url}${row['id']}'><button type='button' class='btn btn-success'>修改</button></a></td>
                             <td><a href='${delete_url}${row['id']}'><button type='button' class='btn btn-danger'>刪除</button></a></td>
                             </tr>
                             ";
