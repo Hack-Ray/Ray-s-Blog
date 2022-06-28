@@ -32,9 +32,10 @@
 							文章分類
 						</a>
 						<ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-							<li><a class="dropdown-item" href="#">技術分享</a></li>
-							<li><a class="dropdown-item" href="#">專案紀錄</a></li>
-							<li><a class="dropdown-item" href="#">心情雜記</a></li>
+							<li><a class="dropdown-item" href="<?php echo $class_url;?>0">未分類文</a></li>
+							<li><a class="dropdown-item" href="<?php echo $class_url;?>1">技術分享</a></li>
+							<li><a class="dropdown-item" href="<?php echo $class_url;?>2">專案紀錄</a></li>
+							<li><a class="dropdown-item" href="<?php echo $class_url;?>3">心情雜記</a></li>
 							<li>
 								<hr class="dropdown-divider">
 							</li>

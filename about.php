@@ -26,9 +26,9 @@
 					<dd class="col-sm-8">
 						<p>使用php及mariaDB製作的簡易佈告欄系統，任何人都能夠發文，只有管理員能夠刪除及編輯文章。</p>
 					</dd>
-					<dt class="col-sm-4"><a href="https://github.com/Hack-Ray/BBS">部落格</a></dt>
+					<dt class="col-sm-4"><a href="https://github.com/Hack-Ray/Ray-s-Blog">部落格</a></dt>
 					<dd class="col-sm-8">
-						<p>使用bootstrap為前端，php & mariaDB為後端製作的部落格網站</p>
+						<p>使用bootstrap為前端，php & mariaDB為後端製作的部落格網站。</p>
 					</dd>
 				</dl>
 			</dd>

@@ -22,14 +22,14 @@
         </div>
         <form action="check.php" method="post">
             <div class="row mb-3">
-                <label for="inputEmail3" class="col-2 col-form-label" >Account</label>
-                <div class="col-10">
+                <label for="inputEmail3" class="col-3 col-form-label" >Account</label>
+                <div class="col-9">
                     <input type="text" class="form-control" id="inputEmail3" name="account" >
                 </div>
             </div>
             <div class="row mb-3">
-                <label for="inputPassword3" class="col-2 col-form-label">Password</label>
-                <div class="col-10">
+                <label for="inputPassword3" class="col-3 col-form-label">Password</label>
+                <div class="col-9">
                     <input type="password" class="form-control" id="inputPassword3" name="pwd">
                 </div>
             </div>
