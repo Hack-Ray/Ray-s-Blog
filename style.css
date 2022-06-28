@@ -5,6 +5,7 @@ body {
 html,
 body {
 	height: 100%;
+	position: relative;
 }
 
 .container {
@@ -35,3 +36,10 @@ body {
 	font-size: 16px;
 }
 
+.login {
+	padding: 60px;
+	width: 40%;
+	/* border: 1px solid; */
+	position: relative;
+	max-height: 100px;
+}

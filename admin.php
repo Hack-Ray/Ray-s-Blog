@@ -1,7 +1,11 @@
 <?php
+    session_start();
     include("header.php");
-?>
-
+    
+    if ($_SESSION['user'] != 'ok') {
+        echo "<script>window.location.href='http://localhost/blog/login.php';</script>";
+    }
+    ?>
 <div class="container">
 	<div class="row justify-content-center">
 		<table class="table">
@@ -48,6 +52,13 @@
 	</div>
 </div>
 
+<form method="get">
+    <button type="submit" class="btn btn-danger" name="logout">登出</button>
+</form>
+
 <?php
+    if(isset($_GET['logout'])){
+        session_unset();
+        echo "<script>window.location.href='http://localhost/blog/';</script>";
+    }
     include("footer.php");
-?>
