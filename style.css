@@ -1,0 +1,36 @@
+body {
+	margin-top: 100px;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+.container {
+	min-height: 100%;
+}
+
+.container a {
+	color: rgba(0, 0, 0, 0.8);
+	text-decoration: none;
+}
+
+.text {
+	height: 100px;
+}
+
+.right {
+	text-align: right;
+}
+
+.Block {
+	padding: 60px;
+	height: 100%;
+	/* 	border: 1px solid; */
+	position: relative;
+}
+
+.chName {
+	font-size: 16px;
+}
