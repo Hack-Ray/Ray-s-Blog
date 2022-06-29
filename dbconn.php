@@ -1,4 +1,5 @@
 <?php
+//資料庫資料及連線
 $db = "mysql";
 $server_Name = "localhost";
 $db_Name = "Ray_Blog";

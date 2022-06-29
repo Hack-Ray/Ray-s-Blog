@@ -1,4 +1,7 @@
 <?php
+
+//放url變數 需要改的時候只要改dns_url就好
+
 $dns_url = "http://localhost/blog";
 
 $index_url = "$dns_url";

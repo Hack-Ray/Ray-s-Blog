@@ -11,16 +11,17 @@
 			<small class="text-muted">2022</small>
 			<hr />
             <?php
+                //db連線
                 include("dbconn.php");
+                //按新到舊排序所有文章
                 $stmt = $conn->prepare("SELECT * FROM `articles` ORDER BY `created_at` DESC;");                
                 $stmt->execute();            
                 // set the resulting array to associative
                 $result = $stmt->FetchAll(PDO::FETCH_ASSOC);
 
                 foreach($result as $row) {
-                    $originalDate = $row['created_at'];
-                    //original date is in format YYYY-mm-dd
-                    $timestamp = strtotime($originalDate); 
+                    //格式化日期
+                    $timestamp = strtotime($row['created_at']); 
                     $newDate = date("m-d", $timestamp );
                     echo "
                     <div class='title' style='margin: 5px;'>
@@ -38,6 +39,6 @@
 
 
 <?php
-    $conn = null;
+    $conn = null; //清空資料庫連線
     include("footer.php");
 ?>

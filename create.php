@@ -2,6 +2,7 @@
     session_start();
     include("header.php");
     include("const.php");
+    //驗證是否登入了 否則導回login頁面
     if ($_SESSION['user'] != 'ok') {
         echo "<script>window.location.href='$login_url';</script>";
     }
