@@ -2,12 +2,19 @@
 
 #### 架設自己的部落格
 
+目前規劃完的功能基本上已經完成，未來會持續更新內容。
+
+近期應該放到heroku或GCP上
+
 #### 使用工具
 
 <p>前端：</p>
 <p>bootstrap, html, 微量css, javascript</p>
 <p>後端：</p>
 <p>php, mariaDB</p>
+
+架構圖
+![image](https://github.com/Hack-Ray/Ray-s-Blog/blob/master/photos/blog%E6%9E%B6%E6%A7%8B%E5%9C%96.jpeg)
 
 主頁
 ![image](https://github.com/Hack-Ray/Ray-s-Blog/blob/master/photos/%E4%B8%BB%E9%A0%81.png)
