@@ -1,8 +1,9 @@
 <?php
     session_start();
     include("header.php");
+    include("const.php");
     if ($_SESSION['user'] != 'ok') {
-        echo "<script>window.location.href='http://localhost/blog/login.php';</script>";
+        echo "<script>window.location.href='$login_url';</script>";
     }
     include("search.php");
     // ${result['title']} ${result['body']} ${result['class']}
@@ -12,7 +13,7 @@
         <div class="d-grid gap-2 justify-content-center">
         <h2 class="col">修改文章</h2>
         </div>
-        <form action="update.php" method="post">
+        <form action="<?php echo $update_url;?>" method="post">
             <input type="hidden" name="id" value="<?php echo $id;?>">
             <div class="row mb-3">
                 <label class="col-12 col-form-label" >標題</label>

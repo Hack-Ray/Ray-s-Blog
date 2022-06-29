@@ -1,8 +1,9 @@
 <?php 
     session_start();
     include("header.php");
+    include("const.php");
     if ($_SESSION['user'] != 'ok') {
-        echo "<script>window.location.href='http://localhost/blog/login.php';</script>";
+        echo "<script>window.location.href='$login_url';</script>";
     }
 ?>
 <div class="container">
@@ -10,7 +11,7 @@
         <div class="d-grid gap-2 justify-content-center">
         <h2 class="col">新增文章</h2>
         </div>
-        <form action="receive.php" method="post">
+        <form action="<?php echo $receive_url;?>" method="post">
             <div class="row mb-3">
                 <label class="col-12 col-form-label" >標題</label>
                 <div class="col-12">

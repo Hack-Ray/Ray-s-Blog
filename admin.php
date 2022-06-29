@@ -4,7 +4,7 @@
     include("const.php");
     
     if ($_SESSION['user'] != 'ok') {
-        echo "<script>window.location.href='http://localhost/blog/login.php';</script>";
+        echo "<script>window.location.href='$login_url';</script>";
     }
     ?>
 <div class="container">
@@ -61,8 +61,8 @@
 <?php
 if (isset($_GET['logout'])) {
         session_unset();
-        echo "<script>window.location.href='http://localhost/blog/';</script>";
+        echo "<script>window.location.href='$index_url';</script>";
     } elseif (isset($_GET['create'])) {
-        echo "<script>window.location.href='http://localhost/blog/create.php';</script>";
+        echo "<script>window.location.href='$create_url';</script>";
 }
 include("footer.php");

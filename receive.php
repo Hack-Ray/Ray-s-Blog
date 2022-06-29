@@ -1,7 +1,8 @@
 <?php
     session_start();
+    include("const.php");
     if ($_SESSION['user'] != 'ok') {
-        echo "<script>window.location.href='http://localhost/blog/login.php';</script>";
+        echo "<script>window.location.href='$login_url';</script>";
     }
     include("dbconn.php");
     
@@ -11,4 +12,4 @@
     $stmt->bindParam(":class", $_POST['class']);
     $stmt->execute();
     $conn = null;
-    header("location: http://localhost/blog/admin.php");
+    header("location: " . $admin_url);

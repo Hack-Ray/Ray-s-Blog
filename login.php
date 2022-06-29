@@ -9,7 +9,7 @@
         if ($_POST['account'] == 'ray') {
             if ($_POST['pwd'] == $admin_pwd){
                 $_SESSION['user'] = 'ok';
-                echo "<script>window.location.herf='http://localhost/blog/admin.php';</script>";
+                echo "<script>window.location.herf='$admin_url';</script>";
             }
         }
     }
