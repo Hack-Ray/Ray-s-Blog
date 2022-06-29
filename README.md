@@ -6,6 +6,8 @@
 
 近期應該放到heroku或GCP上
 
+https://ray-s-blog.herokuapp.com/
+
 #### 使用工具
 
 <p>前端：</p>
