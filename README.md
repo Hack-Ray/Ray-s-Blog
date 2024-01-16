@@ -11,7 +11,7 @@
 <br/>
 部署到heroku時，因heroku環境支援的問題，使用的資料庫改為heroku提供的postgresql。<br/>
 <br/>
-部落格網址：https://ray-s-blog.herokuapp.com/
+
 <hr/>
 本次規劃、設計、開發、部署以時間軸來說，看似迅速，<br/>
 但其實開發一個自己的部落格這件事已經在埋在我的心裡有一段時間了，<br/>
